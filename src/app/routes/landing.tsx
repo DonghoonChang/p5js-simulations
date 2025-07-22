@@ -23,6 +23,9 @@ const LandingRoute = () => {
       <Head description="Welcome to bulletproof react" />
       <div className="flex h-screen items-center bg-white">
         <div className="mx-auto max-w-7xl px-4 py-12 text-center sm:px-6 lg:px-8 lg:py-16">
+          <h1 className="font-mono text-3xl font-bold underline">
+            Hello world! OK. Is this working now
+          </h1>
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Bulletproof React</span>
           </h2>
