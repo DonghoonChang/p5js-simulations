@@ -1,5 +1,5 @@
 import { QueryClient, useQueryClient } from '@tanstack/react-query';
-import { useMemo } from 'react';
+import { StrictMode, useMemo } from 'react';
 import { createBrowserRouter } from 'react-router';
 import { RouterProvider } from 'react-router/dom';
 
@@ -84,5 +84,9 @@ export const AppRouter = () => {
 
   const router = useMemo(() => createAppRouter(queryClient), [queryClient]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  );
 };
